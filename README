@@ -1,0 +1,36 @@
+Untar the package file to your GIMP plug-ins directory:
+
+  $  cd ~/.gimp-1.2/plug-ins
+  $  gunzip -c /path/to/pmosaic-0.1.tar.gz | tar xf - 
+
+Start GIMP. You should see two new options on the Xtns/Perl-Fu menu of the
+main toolbox. 
+
+  photomean
+
+and
+
+  pmosaic
+
+Although these are provided in the GIMP's menu system it is recommended for
+performance reasons that they be run from the command-line or in batch. See
+the in-line documentation for full details.
+
+Before using the photomosaic software please run at least the pmosaic.t and
+photomean.t tests to verify correct installation and functionality. These can
+be found in the t/ directory from wherever you untarred the package.
+
+  $  cd t
+  $  perl ./photomean.t
+  $  perl ./pmosaic.t
+
+If everything passes you are all set! 
+
+For best results, the more photos in your library the better. I recommend
+around 4000 at an absolute minimum. 7-8000 should be adequate.
+
+If you create any really nice photomosaics with this software email the author
+and I'll consider adding them to the pmosaic home page at
+http://thebigmachine.org/gimp/pmosaic/
+
+Happy Mosaicking!
